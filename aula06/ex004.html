@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a usar o DOM</title>
+</head>
+<style>
+    body{
+        background-color: rgba(173, 216, 230, 0.548);
+    }
+    /*
+    DOM 
+    D ocument
+    O bject
+    M odel
+    conjunto de objetos do navegador da acesso aos componentes do site 
+    */
+</style>
+
+<body>
+    <h1>Iniciando os estudos <strong>DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o DOM em javascript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+                                                         /* se tiver no plural como elements devo colocar o indice que qual é */
+        var p1 = window.document.getElementsByTagName('p')[0] /*pegar os elementos da tag de nome paragrafo. qual?? o paragrafo 0 que é o primeiro a aparecer. salva na variável p1*/
+        window.document.writeln(p1.innerText)   /*Escreve o texto que esta dentro de p1  innerText para só o texto sem formatação já o innerHtml pega a formatação*/
+        p1.style.color = 'blue'
+
+        var msg1 = window.document.getElementById('msg') 
+        window.document.write(msg1.innerText) 
+
+    </script>
+</body>
+</html>
